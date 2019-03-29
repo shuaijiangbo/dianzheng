@@ -1,0 +1,81 @@
+@import "./_init";     
+@import "./_mixins";
+@import "./_breadcrumbs"; 
+@import "./_footer"; 
+@import "./_nav";    
+  
+
+
+// 主体内容
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  min-height: 629px;
+  // 分页样式
+  .pagination {
+    align-self: center;
+    text-align: center;
+    //margin: 50px 0;
+    list-style: none;
+    
+  }  
+  .wrapper {
+    @include wrapper;
+    h3 {
+      font-size: 18px;
+      padding-top: 14px;
+    }
+    &>span {
+      display: block;
+      color: #666666;
+      font-size: 12px;
+      padding-top: 13px;
+      padding-bottom: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    
+    .allimages > li {
+      padding: 17px;
+      border-top: 1px solid #dddddd;
+    }
+    .allimages li > ul { 
+      display: flex;
+      li {  
+        &+li {
+          margin-left: 15px;
+        }
+        width: 285px;
+        cursor: pointer;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          color: #fff;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 50px;
+          background: rgba($color: #000000, $alpha: 0.5);
+          text-align: center;
+          transition: 0.4s ease-in;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &:hover {
+          p {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>豪体体育</title>
+    <script>  
+        var userAgent = navigator.userAgent.toLowerCase();
+        var platform;
+        if (userAgent == null || userAgent == '') {
+          platform = 'WEB';
+        } else {
+          if (userAgent.indexOf("android") != -1) {
+            platform = 'ANDROID';
+          } else if (userAgent.indexOf("ios") != -1 || userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1) {
+            platform = 'IOS';
+          } else if (userAgent.indexOf("windows phone") != -1) {
+            platform = 'WP';
+          } else {
+            platform = 'WEB';
+            window.location.href = "http://hoti.aiegov.com/index.html";  
+          }
+        }
+        /(iPad|iPod)/i.test(navigator.userAgent)&&(head=document.getElementsByTagName('head'),viewport=document.createElement('meta'),viewport.name='viewport',viewport.content='target-densitydpi=device-dpi, width=480px, user-scalable=no',head.length>0&&head[head.length-1].appendChild(viewport));
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but hotim doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .parent {
+      width: 500px;
+      height: 500px;
+      background-color: blue;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    居中
+  </div>
+<!-- <script>
+  
+
+  window.onload = (function (doc, win) {
+      var docEl = win.document.documentElement;
+      var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+      var metaEl = doc.querySelector('meta[name="viewport"]');
+      var dpr = 0;
+      var scale = 0;
+      console.log(111)
+      // 对iOS设备进行dpr的判断，对于Android系列，始终认为其dpr为1
+      if (!dpr && !scale) {
+
+        var isAndroid = win.navigator.appVersion.match(/android/gi);
+        var isIPhone = win.navigator.appVersion.match(/[iphone|ipad]/gi);
+        var devicePixelRatio = win.devicePixelRatio;
+
+        if (isIPhone) {
+          dpr = devicePixelRatio;
+        } else {
+          drp = 1;
+        }
+
+        scale = 1 / dpr;
+      }
+
+      /**
+        * ================================================
+        *   设置data-dpr和viewport
+        × ================================================
+        */
+
+      docEl.setAttribute('data-dpr', dpr);
+      // 动态改写meta:viewport标签
+      if (!metaEl) {
+        metaEl = doc.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        document.documentElement.firstElementChild.appendChild(metaEl);
+      } else {
+        metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+      }
+
+
+      console.log(`layout viewport:${document.documentElement.clientWidth}`)
+      console.log(`可见 viewport:${window.innerWidth}`)
+      console.log(`dpr:${window.devicePixelRatio}`)
+    })(document, window)
+    
+  
+</script> -->
+</body>
+</html>

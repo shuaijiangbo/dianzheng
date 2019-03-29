@@ -1,0 +1,28 @@
+@mixin wrapper {
+  width: 1200px;
+  margin: 0 auto;
+} 
+
+@mixin title {
+  position: relative;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin-bottom: 20px;
+  img {
+    position: absolute;
+    left: 255px;
+  }
+  h3 {
+    display: inline-block;
+    width: 523px;
+    height: 73px;
+    background: url('../images/divbg1.jpg') no-repeat;
+    background-size: 100% 100%;
+    line-height: 73px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;       
+  }
+}

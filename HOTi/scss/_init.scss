@@ -1,0 +1,85 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset, 
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font: 14px "微软雅黑", "Arial Narrow", HELVETICA;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none
+}
+
+a:hover {
+  
+  text-decoration: none;
+}
+
+em {
+  font-style: normal
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+p {
+  word-wrap: break-word
+}
+button {
+  border: 0;  
+}
+.active { 
+  color: #fff;
+  background: linear-gradient(#de581a, #f08c1a);
+}
+       
+ @font-face { 
+   font-family: 'iconfont';
+   src: url('../iconfont/iconfont.eot');
+   src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+     url('../iconfont/iconfont.woff') format('woff'),
+     url('../iconfont/iconfont.ttf') format('truetype'),
+     url('../iconfont/iconfont.svg#iconfont') format('svg');
+ }     
+ .iconfont {
+   font-family: "iconfont" !important;
+   font-size: 16px;
+   font-style: normal; 
+   -webkit-font-smoothing: antialiased;
+   -webkit-text-stroke-width: 0.2px;
+   -moz-osx-font-smoothing: grayscale;
+ }

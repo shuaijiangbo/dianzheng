@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/imagegrop.css">
+  <link rel="icon" href="images/favicon-20181218100212822.ico" type="img/x-ico" />
+  <script src="js/common.js"></script>
+  <title>图组</title>
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="wrapper">
+      <div>
+        <a href="index.html"><img src="images/HOTI.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <!-- 导航条 -->
+  <nav>
+    <div class="wrapper">
+      <ul>
+        <li><a class="active" href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 面包屑 -->
+  <div class="breadcrumbs">
+    <div class="wrapper">
+      <div>
+        <img src="./images/home.png" alt="">
+        <span>当前位置：</span>
+        <a href="index.html">首页</a>
+        <a> > 图组</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主体内容 -->
+  <main>
+    <div class="wrapper">
+      <a id="more" href="morewonderful.html">
+        <i class="iconfont">&#xe679;</i>
+        <span>更多精彩</span>
+      </a>
+      <h3>常规赛：尼克斯VS凯尔特人 图集</h3>
+      <span>HOTI官网<span>2018-12-7 11:01</span></span>
+
+      <div id="slider">
+        
+        <div class="slider_box" id="slider_name">
+          <ul class="silder_con">
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg" /></a>
+            </li>
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg" /></a>
+      
+            </li>
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg"/></a>
+      
+            </li>
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg" /></a>
+      
+            </li>
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg" /></a>
+      
+            </li>
+            <li class="silder_panel clearfix"> <a class="f_l"><img class="f_2" src="images/lunbo1.jpg" /></a>
+      
+            </li>
+
+          </ul>
+          <ul class="silder_nav clearfix">
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            <li><a><img src="images/lunbo1.jpg" /></a></li>
+            
+          </ul>
+        </div>
+        <!-- <div class="silderBox"></div> -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+      <p class="callus"><a href="callus.html">联系我们</a><span>@2018 豪体体育发展 <span style="margin-left: 20px">保留所有权利</span></span></p>
+      <p>渝ICP备18004163号</p>
+    </div>
+  </footer>
+
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script>
+    
+    $(function () {
+        window.onscroll = function () {
+          var t = document.documentElement.scrollTop || document.body.scrollTop;
+          document.getElementById("more").style.top =  t + 'px';
+        }
+
+        for(var i = 0 ;i < 6; i ++) {
+          console.log($(".f_2").eq(i).attr('src'))
+          $(".f_l").eq(i).attr("href", 'imagedetail.html?src=' + $(".f_2").eq(i).attr('src'));
+        }
+        
+
+        var sWidth = $("#slider_name").width();
+        var len = $("#slider_name .silder_panel").length;
+        var index = 0;
+        var picTimer;
+
+        var btn = "<a class='prev'>Prev</a><a class='next'>Next</a>";
+        $("#slider_name").append(btn);
+
+        $("#slider_name .silder_nav li").css({ "opacity": "0.6", "filter": "alpha(opacity=60)" }).mouseenter(function () {
+          index = $("#slider_name .silder_nav li").index(this);
+          showPics(index);
+        }).eq(0).trigger("mouseenter");
+
+        $("#slider_name .prev,#slider_name .next").css({ "opacity": "1", "filter": "alpha(opacity=20)" }).hover(function () {
+          $(this).stop(true, false).animate({ "opacity": "1", "filter": "alpha(opacity=60)" }, 300);
+        }, function () {
+          $(this).stop(true, false).animate({ "opacity": "1", "filter": "alpha(opacity=20)" }, 300);
+        });
+
+
+        // Prev
+        $("#slider_name .prev").click(function () {
+          index -= 1;
+          if (index == -1) { index = len - 1; }
+          showPics(index);
+        });
+
+        // Next
+        $("#slider_name .next").click(function () {
+          index += 1;
+          if (index == len) { index = 0; }
+          showPics(index);
+        });
+
+        // 
+        $("#slider_name .silder_con").css("width", sWidth * (len));
+
+        // mouse 
+        $("#slider_name").hover(function () {
+          clearInterval(picTimer);
+        }, function () {
+          picTimer = setInterval(function () {
+            showPics(index);
+            index++;
+            if (index == len) { index = 0; }
+          }, 3000); 
+        }).trigger("mouseleave");
+
+        // showPics
+        function showPics(index) {
+          var nowLeft = -index * sWidth;
+          $("#slider_name .silder_con").stop(true, false).animate({ "left": nowLeft }, 1000);
+          $("#slider_name .silder_nav li").removeClass("current").eq(index).addClass("current");
+          $("#slider_name .silder_nav li").stop(true, false).animate({ "opacity": "1" }, 300).eq(index).stop(true, false).animate({ "opacity": "1" }, 300);
+        }
+      });
+  </script>
+</body>
+
+</html>

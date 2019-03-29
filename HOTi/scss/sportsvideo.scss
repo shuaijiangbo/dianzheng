@@ -1,0 +1,26 @@
+@import "./_init";     
+@import "./_mixins";
+@import "./_breadcrumbs"; 
+@import "./_footer"; 
+@import "./_nav";   
+
+main {
+  margin-bottom: 27px;
+  .wrapper {
+    @include wrapper;
+    padding: 30px 0;
+    background-color: #f6f9fc;
+    text-align: center;
+    position: relative;
+    div.watermark {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../images/shuiyin.png');
+    }
+    div.title {
+      @include title;
+    }
+  }
+}

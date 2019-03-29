@@ -1,0 +1,338 @@
+//颜色
+$base_color:#ff6000;
+//$base_color1:#000;
+//$base_color2:#fff;
+//
+//$base_botton_color:green;
+//
+//
+//
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font-family: '微软雅黑';
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}　　
+
+ .pull-right{
+   float: right;
+ }
+
+
+.content-box{
+  width: 100%;
+  .content{
+    width: 1200px;
+    margin:0 auto ;
+    margin-bottom: 90px;
+  }
+}
+.el-dropdown-menu{
+  padding: 0;
+  border: 1px solid #e0e0e0;
+}
+
+.el-dropdown-menu__item{
+  font-size: 14px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.el-dropdown{
+  width: 110px;
+  .el-dropdown-link{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  background-color: #ff6000;
+  color: #fff;
+}
+
+.form-register .el-input__inner{
+  border-radius: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.phone-code .el-input__inner{
+  /*border-right: none;*/
+}
+.el-button.regiester-now{
+  width: 460px;
+  background: #ff6000;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+  margin-left: 120px;
+}
+.el-button.regiester-disagree{
+  background: #b3abab;
+  color: #fff;
+  cursor: no-drop;
+}
+
+.el-input.is-active .el-input__inner, .el-input__inner:focus{
+  border-color: #ff6000;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #ff6000;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #ff6000;
+  border-color: #ff6000;
+}
+
+
+.form-box .el-alert{
+  padding: 12px 16px;
+  background: #fffeee;
+  border: 1px solid #edd28b;
+  color: #b1aea9;
+  margin-bottom: 30px;
+}
+
+.form-box .msgForm{
+  width: 650px;
+}
+
+
+.avatar-uploader{
+  float: left;
+}
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+}
+
+
+
+
+
+.login_size{
+  font-size: 18px;
+  color: #ff6f18;
+}
+.login_size1{
+  font-size: 12px;
+  color:#b2b2b2;
+}
+.login-register .el-input__inner{
+  border-radius: 0;
+  height: 40px;
+  line-height: 50px;
+}
+
+.user_name{
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 176%;
+  margin-left: -119px;
+  margin-top: 30px;
+  height:40px;
+}
+.user_pwd{
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  width: 176%;
+  margin-left: -119px;
+  margin-top: 10px;
+}
+
+.check{
+  margin-left: -119px;
+}
+.el-button.login-now{
+  width: 316px;
+  background: #ff6000;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.login-now{
+  margin-top: -22px;
+
+}
+.el-input__prefix {
+  line-height: 50px;
+}
+#count .el-input__prefix {
+  line-height: 40PX;
+}
+
+.table-content .el-form-item__error{
+  top: 36%;
+  left: 70px;
+}
+.login-form .el-form-item__error {
+  margin-left: -116px;
+}
+
+
+.el-autocomplete-suggestion.el-popper{
+  width: 275px !important;
+}
+
+.read .el-checkbox__label {
+  color: #359eff !important;
+  /* margin-right: -40px; */
+  margin-left: -30px;
+  padding: 0;
+}
+.read .el-checkbox__inner {
+  display: none;
+}
+
+.el-icon-error + div > .el-notification__title {
+  color: red !important;
+}
+.el-icon-error + div >.el-notification__content {
+  color: red !important;
+}
+.register-dialog .el-dialog__body {
+  padding-top: 0;
+}
+
+.el-table__body .el-upload-list{
+  display: inline-block;
+  vertical-align: -8px;
+}
+
+.quill-editor .ql-editor{
+  height: 350px;
+}
+
+.editor {
+   line-height: normal !important;
+   height: 800px;
+ }
+.quill-editor{
+  .ql-snow .ql-tooltip[data-mode=link]::before {
+    content: "请输入链接地址:";
+  }
+  .ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    border-right: 0px;
+    content: '保存';
+    padding-right: 0px;
+  }
+
+  .ql-snow .ql-tooltip[data-mode=video]::before {
+    content: "请输入视频地址:";
+  }
+  .ql-snow .ql-picker.ql-size .ql-picker-label::before,
+  .ql-snow .ql-picker.ql-size .ql-picker-item::before {
+    content: '14px';
+  }
+  .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+    content: '10px';
+  }
+  .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+    content: '18px';
+  }
+  .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+    content: '32px';
+  }
+
+  .ql-snow .ql-picker.ql-header .ql-picker-label::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item::before {
+    content: '文本';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+    content: '标题1';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+    content: '标题2';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+    content: '标题3';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+    content: '标题4';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+    content: '标题5';
+  }
+  .ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+  .ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+    content: '标题6';
+  }
+
+  .ql-snow .ql-picker.ql-font .ql-picker-label::before,
+  .ql-snow .ql-picker.ql-font .ql-picker-item::before {
+    content: '标准字体';
+  }
+  .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+  .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+    content: '衬线字体';
+  }
+  .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+  .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+    content: '等宽字体';
+  }
+
+}

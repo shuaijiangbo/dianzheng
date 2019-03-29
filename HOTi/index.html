@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="icon" href="images/favicon-20181218100212822.ico" type="img/x-ico" />
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/common.js"></script>
+</head>
+<body> 
+  <!-- 头部 -->  
+  <header>
+    <div class="wrapper">
+      <div>
+        <a href="index.html"><img src="images/HOTI.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <!-- 导航条 -->
+  <nav>
+    <div class="wrapper">
+      <ul>
+        <li><a class="active" href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主体内容 -->
+  <main>
+    <ul class="imggroup">
+      <li><a href="imagedetail.html"><p>2018/2019亚洲青少年花样滑冰挑战赛<br>（现场技术服务）</p></a></li>
+      <li><a href="imagedetail.html"><p>北京市第一届冬季运动会花样滑冰<br>（现场技术服务）</p></a></li>
+      <li><a href="imagedetail.html"><p>第二届全国青年运动会重庆队选拔赛<br>（现场技术服务）</p></a></li>
+    </ul>
+
+    <ul class="servers">
+      <li>
+        <a href="intelligentmatch.html" class="server" style="background: url('./images/backgroundpic_u01.png') center no-repeat;background-size: 100% 100%;background-position: center;"><img src="./images/icon_u01.png" alt=""><span>智慧赛事</span></a>
+        <a href="wisdomvenue.html" class="server" style="background: url('./images/backgroundpic_u02.png') center no-repeat;background-size: 100% 100%"><img src="./images/icon_u02.png" alt=""><span>智慧场馆</span></a>
+      </li>
+      <li>
+        <a href="sportsspotservice.html" class="server" style="background: url('./images/backgroundpic_u03.png') center no-repeat;background-size: 100% 100%"><img src="./images/icon_u03.png" alt=""><span>运动现场服务</span></a>
+        <a href="sportsvideo.html" class="server" style="background: url('./images/backgroundpic_u04.png') center no-repeat;background-size: 100% 100%"><img src="./images/icon_u04.png" alt=""><span>运动视频技术</span></a>
+      </li>
+      <li>
+        <a href="sportsbigdata.html" class="server" style="background: url('./images/backgroundpic_u05.png') center no-repeat;background-size: 100% 100%"><img src="./images/icon_u05.png" alt=""><span>运动大数据分析</span></a>
+        <a href="aboutus.html" class="server" style="background: url('./images/backgroundpic_u06.png') center no-repeat;background-size: 100% 100%"><img src="./images/icon_u06.png" alt=""><span>关于HOTi</span></a>
+      </li>
+      <li>
+        <div class="wrapper">
+          <div><input type="text" placeholder="请输入关键字"><a><img src="./images/serach.png" alt="">搜索</button></a></div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+      <p class="callus"><a href="callus.html">联系我们</a><span>@2018 豪体体育发展 <span style="margin-left: 20px">保留所有权利</span></span></p>
+      <p>渝ICP备18004163号</p>
+    </div>
+  </footer>
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(function () {
+
+    $('.server').hover(function () {
+      $(this).css('backgroundSize', '120% 120%');
+    }, function () {
+      $(this).css('backgroundSize', '100% 100%');
+    })
+
+    var imagegroups = [ 
+      [
+        {src: 'A1.JPG', desc: ''}, 
+        {src: 'A1-1.JPG', desc: '2018年12月22日，2018/2019亚洲青少年花样滑冰挑战赛在三亚举办'},
+        {src: 'A3.JPG', desc: ''}, 
+        {src: 'A3-1.JPG', desc: '赛前-技术准备完毕'}, 
+        {src: 'A5.JPG', desc: '赛中-现场服务'}, 
+        {src: 'A6.JPG', desc: '赛中-香港选手参加'}, 
+      ],   
+      [ 
+        {src: 'B1.JPG', desc: '2018年12月1日，北京市第一届冬季运动会花样滑冰赛事隆重开幕'}, 
+        {src: 'B2.JPG', desc: '赛前-裁判（技术组）设备'}, 
+        {src: 'B3.JPG', desc: '赛中-裁判（打分）设备'}, 
+        {src: 'B4.JPG', desc: '赛中-技术服务场景'},
+        {src: 'B5.jpg', desc: '服务中特写'}, 
+        {src: 'B6.JPG', desc: '赛中-精彩动作回放'},  
+        {src: 'B7.JPG', desc: '赛中-比赛排名'},
+      ],
+      [
+        { src: 'D1.JPG', desc: '2018年11月24日，第二届全国青年运动会重庆队选拔赛在重庆举办' },
+        { src: 'D2.jpg', desc: '赛前-大屏幕画面' },
+        { src: 'D3.JPG', desc: '赛中-比赛评分' },
+        { src: 'D4.JPG', desc: '赛中-比赛排名' }
+      ]
+    ]
+
+    var articles = [
+      {
+        title: '2018/2019亚洲青少年花样滑冰挑战赛（现场技术服务）',
+        content: '很荣幸能为“亚洲级”的赛事服务。'
+      },
+      {
+        title: '北京市第一届冬季运动会花样滑冰（现场技术服务）',
+        content: 'HOTi新版的现场服务系统（软件+硬件）上线。包含：成绩计算系统、裁判打分系统、大屏幕展示系统、现场动作识别及视频回放系统等。'
+      },
+      {
+        title: '第二届全国青年运动会重庆队选拔赛（现场技术服务）',
+        content: '重庆的花样滑冰运动开展也十分活跃。'
+      }
+    ]
+
+    $('.imggroup a').click(function () {
+      window.localStorage.setItem('images', JSON.stringify(imagegroups[$('.imggroup a').index(this)]));
+      window.localStorage.setItem('article', JSON.stringify(articles[$('.imggroup a').index(this)]));
+    })  
+  })
+</script>
+</html>

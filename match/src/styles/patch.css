@@ -1,0 +1,1057 @@
+body,html {
+    height: 100%;
+    min-width: 1200px;
+}
+
+/* table 表格统一优化 */
+body .el-table th.gutter {
+    display: table-cell !important;
+}
+body td {
+    background-clip: padding-box !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #ed6e25;
+    color: #fff !important;
+}
+.el-pagination.is-background .el-pager li:hover{
+    color: #ed6e25 !important;
+}
+
+.el-breadcrumb .el-breadcrumb__item:first-child .el-breadcrumb__inner.is-link:hover {
+    color: #ed6e25 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* .el-upload--picture-card {
+    display: inline-flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px !important;
+} */
+span.renovate {
+    cursor: pointer;
+}
+.el-breadcrumb {
+    line-height: 1;
+    font-size: 13px;
+    font-family: monospace;
+}
+.toolbar {
+    background: #fff !important;
+    padding-left: 0;
+}
+.el-table th>.cell {
+    text-align: center !important;
+}
+.el-table--border {
+    border: 1px solid #bfbfbf !important;
+}
+.el-table--group {
+    border: 1px solid #bfbfbf !important;
+}
+.el-table::before {
+    background-color: #fff !important;
+}
+.el-table--border::after, .el-table--group::after {
+    background-color: #fff !important;
+}
+.el-table th {
+    color: #000;
+    background-color: #f0f0f0 !important;
+}
+.el-table tr {
+    color: #000;
+}
+.el-table thead {
+    color: #000;
+}
+.el-table {
+    font-size: 13px;
+}
+.el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #bfbfbf;
+    font-weight: 500;
+}
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border .is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid #bfbfbf;
+}
+.el-checkbox__input.is-disabled .el-checkbox__inner {
+    background-color: #fff;
+    border-color: #c8c8c8;
+    cursor: not-allowed;
+}
+.el-pagination .btn-prev, .el-pagination .btn-next{
+    width: 60px;
+}
+/* .el-pagination__total {
+    color: #000;
+}
+.el-pagination .el-select .el-input .el-input__inner {
+    color: #000;
+}
+.el-pagination.is-background .btn-next.disabled, .el-pagination.is-background .btn-next:disabled, .el-pagination.is-background .btn-prev.disabled, .el-pagination.is-background .btn-prev:disabled, .el-pagination.is-background .el-pager li.disabled {
+    color: #000;
+}
+.el-pagination__jump {
+    color: #000;
+} */
+#match-manage .tb-content .el-table__row td:last-child .cell {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#match-manage .tb-content .el-table__row td:last-child .cell button {
+    margin: 2px;
+}
+#all-match-manage .tb-content .el-table__row td:last-child .cell {
+    display: flex;
+    justify-content: center;
+}
+.resourcemanage .el-table__row td:last-child .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 按钮样式*/
+
+
+/* .el-button--primary {
+    color: #fff;
+    border-color: #000;
+    background: linear-gradient(#11abf0, #416ae2);
+}
+.el-button--danger {
+    color: #fff;
+    border-color: #000;
+    background: linear-gradient(#f75b6e, #aa0607);
+}
+.el-button {
+    border: 1px solid #000;
+    border-radius: 0px;
+}
+.el-button--danger.is-disabled {
+    color: #fff;
+    border-color: #000 !important;
+    background: linear-gradient(#f75b6e, #aa0607) !important;
+} */
+
+.el-breadcrumb__inner, .el-breadcrumb__separator {
+    color: #000;
+}
+.el-breadcrumb__item:last-child .el-breadcrumb__inner, .el-breadcrumb__item:last-child .el-breadcrumb__inner a, .el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover, .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover {
+    font-weight: 400;
+    color: #000;
+    cursor: text;
+}
+
+/* 侧边栏样式*/
+.el-submenu__title:hover {
+    background: linear-gradient(to right, #f08729, #eb5e1a) !important;
+}
+.el-submenu.is-active .el-submenu__title {
+    color: #fff;
+    background: linear-gradient(to right, #f08729, #eb5e1a) !important;
+}
+.el-submenu.is-active {
+    color: #16caf7 !important;
+}
+/* .aside > .el-menu > .el-menu-item {
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+.aside > .el-menu>.el-menu-item:hover {
+    color: #fff !important;
+    border: none;
+    background: linear-gradient(to right, #f08729, #eb5e1a) !important;
+} */
+.el-submenu .el-menu-item {
+    font-weight: 500 !important;
+    min-width: auto !important;
+}
+.el-submenu__title {
+    font-size: 14px;
+    height: 37px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #343a40 !important;
+}
+.el-submenu .el-menu-item:hover {
+    border: 1px solid #f2912f;
+    color: #f2912f !important;
+    background-color: #171311 !important;
+    box-shadow: 0px 0px 7px #f2912f inset
+}
+.el-submenu .el-menu-item:hover i {
+    color: #f2912f !important;
+}
+.el-menu-item:hover i {
+    color: #f2912f !important;
+}
+.el-menu-item:hover {
+    color: #f2912f !important;
+    background-color: #171311 !important;
+    box-shadow: 0px 0px 7px #f2912f inset
+}
+/* test*/
+.el-menu > .el-menu-item {
+    padding-left: 20px !important;
+    margin-left: 0;
+    height: 35px;
+}
+.el-menu-item i {
+    color: #fff;
+    margin-right: 0 !important;
+}
+.el-submenu [class^="fa"] {
+    /* vertical-align: middle; */
+    margin-right: 0;
+}
+.el-submenu .el-menu-item {
+    line-height: 30px !important;
+    font-weight: 500 !important;
+    min-width: auto !important;
+    padding: 0 !important;
+    margin: 0 10px;
+    border-radius: 7px;
+    background-color: #343a40 !important;
+    padding-left: 40px !important;
+    margin-bottom: 10px;
+}
+.el-menu-item {
+    color: #fff;
+    font-weight: 500 !important;
+    min-width: auto !important;
+    padding: 0 !important;
+    padding-left: 40px !important;
+    margin: 0 10px;
+    border-radius: 7px;
+    background-color: #343a40 !important;
+    margin-bottom: 10px;
+    line-height: 32.5px !important;
+}
+.el-submenu {
+    color: #fff;
+}
+.el-menu-item {
+    background-color: #343A40 !important;
+}
+.el-menu {
+    border-right: none;
+    font-family: monospace;
+    letter-spacing: 1px;
+    background-color: #343a40 !important;
+}
+.el-submenu .el-menu {
+    padding-top: 10px;
+    border: none;
+}
+.el-submenu .el-menu-item {
+    height: 32px;
+    line-height: 30px;
+    color: #fff;
+}
+.el-menu-item {
+    font-size: 13px;
+    height: 32px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.el-submenu__title i {
+    color: #fff;
+}
+.el-submenu__title {
+    font-size: 13px;
+    line-height: 33px !important;
+}
+.el-submenu__title .fa {
+    vertical-align: middle !important;
+}
+.el-submenu__title img {
+    margin-bottom: 3px;
+}
+.el-menu-item.is-active {
+    color: #f2912f !important;
+    border: 1px solid #f2912f;
+    color: #f2912f !important;
+    background-color: #171311 !important;
+    box-shadow: 0px 0px 7px #f2912f inset
+}
+
+.el-menu>li.el-submenu:first-child {
+    border-top: 0;
+    border-right: 0;
+}
+
+.el-submenu {
+    border-bottom: 1px solid #050606;
+    border-top: 1px solid rgb(93, 99, 104);
+    border-right: 1px solid rgb(93, 99, 104);
+}
+
+/* 弹框样式 */
+.statementDialogVisible p{
+    color: #000;
+}
+.el-dialog__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    padding: 0 20px;
+    background: linear-gradient(to right, #eb5e1a, #f08729) !important;
+    background-size: 100% 100%;
+}
+.el-dialog__headerbtn {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.el-dialog__title {
+    font-size: 15px;
+    font-family: monospace;
+}
+.el-dialog__body {
+    overflow: hidden;
+}
+
+/* 多图上传样式 */
+/* .el-upload--picture-card, .el-upload-list--picture-card .el-upload-list__item {
+    width: 200px !important;
+    height: 200px !important;
+} 
+.avatar {
+    border-radius: 5px;
+} */
+
+/* 右侧样式 */
+.container {
+	min-width: 1200px;
+}
+.content-container {
+		padding: 0 !important;
+		overflow-y: auto !important;
+}
+.breadcrumb-container {
+	background: #eeeeee;
+	padding-left: 20px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.el-breadcrumb {
+    height: 37px;
+    line-height: 37px;
+}
+.content-wrapper {
+	padding: 0 20px !important;
+}
+/* 右侧工具栏样式 */
+/* .toptoolbar {
+    padding: 0;
+    margin: 5px 0;
+}
+.toptoolbar .el-select__caret {
+    width: 17px;
+    opacity: 0;
+    
+}
+.toptoolbar .el-input__suffix {
+    background: url('../../static/images/select.jpg') no-repeat;
+    right: 0px !important;
+}
+
+.toptoolbar .el-form {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.toptoolbar .el-form .right {
+    display: flex;
+    align-items: center;
+}
+.toptoolbar .el-form .right span.label {
+    padding-right: 10px;
+    letter-spacing: 1px;
+    color: #464646;
+}
+.toptoolbar .top .el-input__inner{
+   border-radius: 0px;
+    
+}
+.toptoolbar .el-input .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #d2d2d2;
+}
+.toptoolbar .el-input .el-input__inner::-webkit-input-placeholder {
+    color: #d2d2d2;
+    letter-spacing: 1px;
+}
+.toptoolbar .el-select {
+    margin-right: 10px;
+}
+.toptoolbar .el-input--suffix .el-input__inner{
+    width: 190px;
+    height: 30px;
+    border-radius: 0px;  
+}  */
+
+/* 表格展开行样式 */
+/* .usermanage .demo-table-expand label {
+    width: 68px !important;
+    color: #99a9bf;
+}
+.el-form--label-left .el-form-item__label {
+    text-align: right;
+}
+
+.resourcemanage .demo-table-expand label {
+    width: 82px !important;
+    color: #99a9bf;
+} */
+
+/* Form表单样式 */
+.dialogform .el-form-item__label {
+    width: 140px !important;
+    height: 40px;
+    line-height: 40px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    color: #000;
+}
+.dialogform {
+    overflow: hidden;
+}
+.dialogform .el-form-item {
+    float: left;
+    width: 50%;
+    /* margin-bottom: 0; */
+}
+.dialogform .el-form-item__content {
+    margin-left: 140px !important;
+    line-height: 0;
+}
+.dialogform .el-input {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 100% !important;
+}
+.dialogform .el-input__inner{
+    border-radius: 0;
+    height: 30px;
+}
+.dialogform  .el-form-item:nth-child(2n) .el-form-item__label {
+    border-left: 0;
+    border-right: 0;
+}
+.dialogform  .el-form-item:nth-child(n) .el-form-item__label {
+    border-right: 0;
+}
+.dialogform .gender .el-form-item__content{
+    line-height: 40px;
+    padding-left: 10px; 
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.el-transfer {
+    display: flex;
+    justify-content: center;
+}
+.dialogform .el-cascader__label {
+    line-height: 40px;
+}
+.dialogform .el-cascader {
+    line-height: 30px;
+    width: 100%;
+}
+/* .dialogform .el-upload__input {
+    display: block;
+} */
+.dialogform .el-select {
+    width: 100%;
+}
+.file-item .el-form-item__content {
+    line-height: 40px;
+    padding-left: 4px;
+    border: 1px solid #ccc !important;
+    border-left: none;
+    box-sizing: border-box;
+    height: 40px;
+}
+.file-item .el-form-item__label {
+    border: 1px solid #ccc;
+}
+.ueditor .el-form-item__content {
+    margin: 0 !important;
+}
+.ueditor {
+    width: 99.7% !important;
+}
+.login-container .el-input .el-input__inner {
+    height: 60px;
+}
+.login-container .el-input {
+    margin-top: 10px;
+}
+#match-manage .search .distpicker-address-wrapper select {
+    font-size: 14px !important;
+}
+#match-manage .search .el-input--suffix {
+    width: 120px;
+}
+#match-manage .tb-content .el-button--mini {
+    margin: 5px;
+}
+/* 赛事管理搜索栏时间选择 */
+#match-manage .search .date .el-form-item__content {
+    width: 420px;
+}
+#match-manage .search .date .el-input__inner {
+    height: 30px;
+}
+#match-manage .search .date .el-input__inner .el-input__icon {
+    line-height: 22px
+}
+#match-manage .search .date .el-input__inner span {
+    line-height: 22px
+}
+/* 赛事管理搜索栏时间选择 */
+
+/* 赛事管理基本信息时间选择 */
+/* #match-manage .basic-info-from .date .el-form-item__content {
+    width: 420px;
+} */
+#match-manage .basic-info-from .date .el-input__inner {
+    width: 570px
+}
+#match-manage .basic-info-from .date .el-input__inner input{
+    width: 270px
+}
+#match-manage .basic-info-from .date .el-input__inner .el-input__icon {
+    line-height: 22px
+}
+#match-manage .basic-info-from .date .el-input__inner span {
+    line-height: 27px
+}
+/* 赛事管理基本信息时间选择 */
+
+/* 报名管理搜索栏时间选择 */
+#signup-manage .search .date .el-form-item__content {
+    width: 420px;
+}
+#signup-manage .search .date .el-input__inner {
+    height: 30px;
+}
+#signup-manage .search .date .el-input__inner .el-input__icon {
+    line-height: 22px
+}
+#signup-manage .search .date .el-input__inner span {
+    line-height: 22px
+}
+/* 赛事管理搜索栏时间选择 */
+
+#match-manage .tb-content .el-button--mini {
+    width: 70px;
+    padding: 7px 0;
+}
+#match-manage .form {
+    height: 100%;
+}
+#match-manage .form .date .el-col-11 {
+    width: 269px;
+}
+#match-manage .form .date .el-col-2 {
+    width: 32px;
+}
+#match-manage .form .full .el-select {
+    width: 570px;
+}
+#match-manage .form .type .el-input__inner {
+    width: 269px;
+}
+#match-manage .form .type .el-input {
+    width: 269px;
+}
+#match-manage .form .el-form-item {
+    margin-bottom: 13px;
+    height: 35px;
+}
+#match-manage .addDialogVisible .el-dialog__body {
+    height: 515px  !important;
+}
+#match-manage .form .el-input__inner {
+    height: 35px;
+}
+#match-manage .form .basic-info-from {
+    position: relative;
+}
+#match-manage .form .basic-info-from .el-upload__tip {
+    margin-top: -15px !important;
+}
+#match-manage .form .basic-info-from .logo-upload {
+    width: 300px;
+    position: absolute;
+    right: 90px;
+    top: 0;
+}
+#match-manage .form .basic-info-from .propaganda-upload {
+    position: absolute;
+    width: 300px;
+    right: 90px;
+    top: 305px;
+}
+
+.logo-upload .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.logo-upload .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.logo-upload .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 193px;
+    height: 240px;
+    line-height: 240px;
+    text-align: center;
+}
+.logo-upload .avatar {
+    width: 193px;
+    height: 240px;
+    display: block;
+}
+.propaganda-upload .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.propaganda-upload .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.propaganda-upload .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 193px;
+    height: 109px;
+    line-height: 109px;
+    text-align: center;
+}
+.propaganda-upload .avatar {
+    width: 193px;
+    height: 109px;
+    display: block;
+}
+.match-support .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.match-support .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+.match-support .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 100px;
+    height: 69px;
+    line-height: 69px;
+    text-align: center;
+}
+.match-support .avatar {
+    width: 100px;
+    height: 69px;
+    display: block;
+}
+#match-manage .search .eventName .el-form-item__content {
+    width: 150px;
+}
+#match-manage .search .distpicker-address-wrapper {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+}
+#match-manage .search .distpicker-address-wrapper select {
+    width: 87px;
+    height: 30px;
+    padding: 0;
+    padding-left: 5px;
+}
+#match-manage .search .el-input {
+    height: 30px;
+}
+#match-manage .search .el-input .el-input__inner {
+    height: 30px;
+}
+#match-manage .search .el-input .el-input__icon {
+    line-height: 30px;
+}
+#match-manage .form .basic-info-from .el-form-item__label {
+    height: 35px;
+}
+#match-manage .form .el-form-item__content {
+    height: 35px;
+}
+#match-manage .form .el-input {
+    height: 35px;
+}
+#match-manage .form .el-input__icon {
+    line-height: 35px;
+}
+#match-manage .form .cost .el-input__inner {
+    padding: 0 2px;
+    text-align: center;
+}
+#match-manage .form .costtype .el-input__inner {
+    padding-left: 12px;
+    text-align: center;
+}
+#match-manage .form .audit .el-input__inner {
+    padding-left: 10px;
+    text-align: center;
+}
+#match-manage .form .group-name .el-input__inner {
+    width: 155px;
+    height: 24px;
+}
+#match-manage .form .group-name .el-input {
+    width: 155px;
+    height: 24px;
+}
+#match-manage .form .upper-limit .el-input__inner {
+    width: 75px;
+    height: 23px;
+}
+#match-manage .form .upper-limit .el-input {
+    width: 75px;
+    height: 23px;
+}
+#match-manage .form .zhuti .el-input__inner {
+    width: 58px;
+    height: 29px;
+    padding-left: 9px;
+}
+#match-manage .form .zhuti .el-input {
+    line-height: 29px;
+    width: 58px;
+    height: 29px;
+}
+#match-manage .form .zhuti .el-input__icon {
+    line-height: 29px;
+}
+#match-manage .form .group-infos .supportRegistration .el-checkbox {
+    margin-right: 0;
+}
+#match-manage .form .group-infos .has-gutter th {
+    padding: 7px 0 !important;
+}
+#match-manage .form .group-infos tbody td {
+    padding: 0 !important;
+}
+#match-manage .form .group-infos .el-input {
+    height: 30px;
+}
+#match-manage .form .group-infos .el-input .el-input__inner {
+    height: 30px;
+}
+#match-manage .form .group-infos .el-input .el-input__icon {
+    line-height: 30px;
+}
+#match-manage .form .group-infos .el-table__row td:last-child .cell {
+    text-align: center;
+}
+#match-manage .form .group-infos .el-table__row td:last-child .cell button {
+    margin: 3px;
+}
+#all-match-manage .el-table__row td:last-child .cell button {
+    margin: 3px;
+}
+#match-manage .form .tb .has-gutter th{
+    padding: 7px 0 !important;
+}
+
+#match-manage .form .tb tbody td {
+    padding: 3px !important;
+}
+#match-manage .form .tb .el-input {
+    height: 30px;
+}
+#match-manage .form .tb .el-input .el-input__inner {
+    height: 30px;
+}
+#match-manage .form .tb .el-input .el-input__icon {
+    line-height: 30px;
+}
+#match-manage .form .tb .el-table__row td:last-child .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#match-manage .form .tb .el-table__row td:last-child .cell button{
+    margin: 5px;
+}
+#match-manage .form .match-attch .el-table__row td:last-child .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#match-manage .form .match-attch .el-table__row td:last-child .cell button {
+    margin: 5px;
+}
+#match-manage .form .match-support .el-table__row td:last-child .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#match-manage .form .match-support .el-table__row td:last-child .cell button {
+    margin: 5px;
+}
+#match-manage .form .match-support .el-input {
+    height: 30px;
+}
+#match-manage .form .match-support .el-input .el-input__inner {
+    height: 30px;
+}
+#match-manage .form .match-support .el-input .el-input__icon {
+    line-height: 30px;
+}
+#match-manage .form .match-support .has-gutter th {
+    padding: 7px 0 !important;
+}
+#match-manage .form .match-support .el-table td {
+    padding: 0 !important;
+}
+#match-manage .form .match-support tbody td .cell {
+    margin-top: 1px;
+}
+#match-manage .form .match-attch .has-gutter th {
+    padding: 7px 0 !important;
+}
+#match-manage .form .match-attch tbody td {
+    padding: 0 !important;
+}
+#match-manage .form .match-attch tbody td .cell {
+    margin-top: 1px;
+}
+#match-manage .ql-editor {
+    height: 413px;
+}
+#match-manage .match-rules .ql-editor {
+    height: 440px;
+}
+#match-manage .form .distpicker-address-wrapper {
+    display: inline-block;
+    height: 35px;
+}
+#match-manage .form .distpicker-address-wrapper select{
+    width: 87px;
+    height: 35px;
+    padding: 0;
+    padding-left: 5px;
+}
+/* #match-manage .search .date input {
+    text-align: center;
+} */
+#match-manage .search .distpicker-address-wrapper {
+    display: inline-block;
+}
+#match-manage .el-button--mini {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 92px;
+}
+#signup-manage .search form > div {
+    margin-bottom: 10px !important;
+}
+#signup-manage .search .el-input {
+    height: 30px;
+}
+#signup-manage .search .el-input .el-input__inner {
+    height: 30px;
+}
+#signup-manage .search .el-input .el-input__icon {
+    line-height: 30px;
+}
+#signup-manage .toptoolbar .el-input {
+    height: 30px;
+}
+#signup-manage .toptoolbar .el-input .el-input__inner {
+    height: 30px;
+}
+#signup-manage .toptoolbar .el-input .el-input__icon {
+    line-height: 30px;
+}
+#signup-manage .search .date .el-form-item__content {
+    width: 400px;
+}
+#signup-manage .has-gutter th {
+    padding: 7px 0 !important;
+}
+#signup-manage .pay-tb-content .el-table td {
+    padding: 7px 0 !important;
+}
+#signup-manage .enrollDialogVisible .el-dialog__body {
+    padding-top: 10px;
+}
+#score-manage .enrollDialogVisible .el-dialog__body {
+    padding-top: 10px;
+}
+#score-manage .issueDialogVisible .el-dialog__body {
+    padding-bottom: 0;
+}
+.el-dialog__footer {
+    padding-bottom: 10px;
+}
+.el-input__inner {
+    border-radius: 0px !important;
+}
+.distpicker-address-wrapper select {
+    border-radius: 0 !important;
+}
+/* 支持方管理 */
+#support-manage .el-table .has-gutter th {
+    padding: 7px 0 !important;
+}
+#support-manage .el-table td {
+    padding: 7px 0 !important;
+}
+#support-manage tbody .cell {
+    line-height: normal;
+}
+#support-manage tbody img {
+    vertical-align: bottom;
+    width: 140px;
+    height: 45px
+}
+
+/* 资料管理 */
+#attch-manage .el-upload-list__item:first-child {
+    margin-top: 0
+}
+/* 资料管理 */
+
+/* 通知管理 */
+.notice-manage-dialog .el-form-item__content {
+    line-height: normal !important;
+}
+.notice-manage-dialog .ql-editor {
+    height: 300px;
+}
+/* 通知管理 */
+
+#all-match-manage .tb-content .has-gutter th {
+    padding: 7px 0 !important;
+}
+#match-manage .tb-content .has-gutter th {
+    padding: 7px 0 !important;
+}
+.search .el-form-item {
+    margin-bottom: 6px;
+}
+
+/* 富文本汉化 */
+.ql-snow .ql-tooltip[data-mode=link]::before {
+    content: "请输入链接地址:";
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    border-right: 0px;
+    content: '保存';
+    padding-right: 0px;
+}
+
+.ql-snow .ql-tooltip[data-mode=video]::before {
+    content: "请输入视频地址:";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+    content: '14px';
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+    content: '10px';
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+    content: '18px';
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+    content: '32px';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+    content: '文本';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+    content: '标题1';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+    content: '标题2';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+    content: '标题3';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+    content: '标题4';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+    content: '标题5';
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+    content: '标题6';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+    content: '标准字体';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+    content: '衬线字体';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+    content: '等宽字体';
+}
+/* 富文本汉化 */

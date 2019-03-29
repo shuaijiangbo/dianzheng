@@ -1,0 +1,86 @@
+@import "./_init";     
+@import "./_mixins";
+@import "./_breadcrumbs"; 
+@import "./_footer"; 
+@import "./_nav";  
+
+main {
+  .wrapper {
+    @include wrapper;
+    box-sizing: border-box;
+    background-color: #f6f9fc;
+    position: relative;
+    .watermark {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../images/shuiyin.png');
+    }
+    .top {
+      background: url('../images/topbg2_03.jpg') no-repeat;
+      background-size: 100% 100%;
+      height: 256px;
+    }
+    .service {
+      text-align: center;
+      position: relative;
+      height: 354px;
+      line-height: 354px;
+      span {
+        position: absolute;
+        width: 286px;
+        height: 67px;
+        background: url('../images/divbg3.png') no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        font-size: 24px;
+        line-height: 67px;
+      }
+      .one {
+        left: 170px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .two {
+        top: 30px;
+        left: 650px;
+      }
+      .three {
+        right: 180px;
+        bottom: 100px;
+      }
+    }
+    section {
+      text-align: center;
+      margin-bottom: 27px;
+      margin-top: 50px;
+      div.title {
+        @include title;    
+      }
+      >img {
+        max-width: 100%;
+      }
+      &:last-child {
+        ul {
+          overflow: hidden;
+          text-align: center;
+          li {
+            display: inline-block;
+            width: 290px;
+            height: 200px;
+            img {
+              max-width: 100%;
+            }
+            &:last-child {
+              width: 580px;
+              float: left;
+            }
+          }
+        }
+      }
+    
+    }
+  }
+  
+}

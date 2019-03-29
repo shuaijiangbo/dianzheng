@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>更多精彩</title>
+  <link rel="icon" href="images/favicon-20181218100212822.ico" type="img/x-ico" />
+  <link rel="stylesheet" href="css/morewonderful.css">
+  <link rel="stylesheet" href="css/myPagination.css">
+  <script src="js/common.js"></script>
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="wrapper">
+      <div>
+        <a href="index.html"><img src="images/HOTI.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <!-- 导航条 -->
+  <nav>
+    <div class="wrapper">
+      <ul>
+        <li><a class="active" href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 面包屑 -->
+  <div class="breadcrumbs">
+    <div class="wrapper">
+      <div>
+        <img src="./images/home.png" alt="">
+        <span>当前位置：</span>
+        <a href="index.html">首页</a>
+        <a> > 更多精彩</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主体内容 -->
+  <main>
+    <div class="wrapper">
+      <h3>更多精彩 图集</h3>
+      <span>HOTI官网<span>2018-12-7 11:01</span></span>
+      <ul class="allimages">
+        <li>
+          <ul>
+            <li><img src="./images/A1.JPG" alt=""><p>2018/2019亚洲青少年花样滑冰挑战赛<br>（现场技术服务）</p></li>
+            <li><img src="./images/B2.JPG" alt=""><p>北京市第一届冬季运动会花样滑冰<br>（现场技术服务）</p></li>
+            <li><img src="./images/D1.JPG" alt=""><p>第二届全国青年运动会重庆队选拔赛<br>（现场技术服务）</p></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 分页 -->
+    <div id="pagination" class="pagination"></div>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="intelligentmatch.html">智能赛事</a></li>
+        <li><a href="wisdomvenue.html">智慧场馆</a></li>
+        <li><a href="sportsspotservice.html">运动现场服务</a></li>
+        <li><a href="sportsvideo.html">运动视频技术</a></li>
+        <li><a href="sportsbigdata.html">运动大数据分析</a></li>
+        <li><a href="aboutus.html">关于HOTi</a></li>
+      </ul>
+      <p class="callus"><a href="callus.html">联系我们</a><span>@2018 豪体体育发展 <span style="margin-left: 20px">保留所有权利</span></span></p>
+      <p>渝ICP备18004163号</p>
+    </div>
+  </footer>
+
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/myPagination.js"></script>
+<script>
+  var imagegroups = [
+      [
+        { src: 'A1.JPG', desc: '' },
+        { src: 'A1-1.JPG', desc: '2018年12月22日，2018/2019亚洲青少年花样滑冰挑战赛在三亚举办' },
+        { src: 'A3.JPG', desc: '' },
+        { src: 'A3-1.JPG', desc: '赛前-技术准备完毕' },
+        { src: 'A5.JPG', desc: '赛中-现场服务' },
+        { src: 'A6.JPG', desc: '赛中-香港选手参加' },
+      ],
+      [
+        { src: 'B1.JPG', desc: '2018年12月1日，北京市第一届冬季运动会花样滑冰赛事隆重开幕' },
+        { src: 'B2.JPG', desc: '赛前-裁判（技术组）设备' },
+        { src: 'B3.JPG', desc: '赛中-裁判（打分）设备' },
+        { src: 'B4.JPG', desc: '赛中-技术服务场景' },
+        { src: 'B5.jpg', desc: '服务中特写' },
+        { src: 'B6.JPG', desc: '赛中-精彩动作回放' },
+        { src: 'B7.JPG', desc: '赛中-比赛排名' },
+      ],
+      [
+        { src: 'D1.JPG', desc: '2018年11月24日，第二届全国青年运动会重庆队选拔赛在重庆举办' },
+        { src: 'D2.jpg', desc: '赛前-大屏幕画面' },
+        { src: 'D3.JPG', desc: '赛中-比赛评分' },
+        { src: 'D4.JPG', desc: '赛中-比赛排名' }
+      ],
+    ]
+
+  var articles = [
+      {
+        title: '2018/2019亚洲青少年花样滑冰挑战赛（现场技术服务）',
+        content: '很荣幸能为“亚洲级”的赛事服务。'
+      },
+      {
+        title: '北京市第一届冬季运动会花样滑冰（现场技术服务）',
+        content: 'HOTi新版的现场服务系统（软件+硬件）上线。包含：成绩计算系统、裁判打分系统、大屏幕展示系统、现场动作识别及视频回放系统等。'
+      },
+      {
+        title: '第二届全国青年运动会重庆队选拔赛（现场技术服务）',
+        content: '重庆的花样滑冰运动开展也十分活跃。'
+      },
+    ]
+  
+  $(function () {
+    $('main').css('min-height', document.documentElement.clientHeight - 309 + 'px')
+
+    $('.allimages li > ul li').click(function () {
+      window.localStorage.setItem('images', JSON.stringify(imagegroups[$('.allimages li > ul li').index(this)]));
+      window.localStorage.setItem('article', JSON.stringify(articles[$('.allimages li > ul li').index(this)]));
+      window.location.href = 'imagedetail.html';
+    })
+  })
+  window.onload = function () {
+    var page = new Page({
+      id: 'pagination',
+      pageTotal: 1, //必填,总页数
+      pageAmount: 10,  //每页多少条
+      dataTotal: 4, //总共多少条数据
+      curPage: 1, //初始页码,不填默认为1
+      pageSize: 5, //分页个数,不填默认为5
+      showPageTotalFlag: false, //是否显示数据统计,不填默认不显示
+      showSkipInputFlag: false, //是否支持跳转,不填默认不显示
+      getPage: function (page) {
+        //获取当前页数
+        console.log(page);
+      }
+    })
+  }
+  
+</script>
+</body>
+</html>

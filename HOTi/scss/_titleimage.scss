@@ -1,0 +1,33 @@
+// title-imgage 内容格式的 通用样式
+main { 
+  margin-bottom: 35px;
+  .wrapper {
+    @include wrapper;
+    position: relative;
+    >div {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../images/shuiyin.png');
+    } 
+    ul {
+    //@include wrapper;
+      background-color: #f6f9fc;
+      li {
+        padding: 40px 0;
+        text-align: center;
+        div.title {
+          @include title;  
+        }
+        >img {
+          +img {
+            margin-top: 45px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+

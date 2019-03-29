@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #2d374b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1610CD;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+body,
+input,
+select,
+button,
+textarea{
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+}
+
+input,
+select,
+textarea{
+  outline: none;
+}
+
+textarea{
+  resize: none;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pr{
+  position: relative;
+}
+
+.txt-cn{
+  text-align: center;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.mgtp-10 {
+  margin-top: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.bs-wp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/** NProgress rewrite **/
+#nprogress .spinner {
+  display: none;
+}
+
+/** NProgress rewrite **/
+
+
